@@ -1,10 +1,10 @@
-import type {FastifyInstance} from 'fastify'
-import type {ZodTypeProvider} from 'fastify-type-provider-zod'
-import {dayjs} from '../lib/dayjs'
-import {z} from 'zod'
-import {prisma} from '../lib/prisma'
-import {getMailClient} from '../lib/mail'
-import {env} from './env'
+import type { FastifyInstance } from 'fastify'
+import type { ZodTypeProvider } from 'fastify-type-provider-zod'
+import { z } from 'zod'
+import { dayjs } from '../lib/dayjs'
+import { getMailClient } from '../lib/mail'
+import { prisma } from '../lib/prisma'
+import { env } from './env'
 
 
 export async function createTrip(app: FastifyInstance) {
